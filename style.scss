@@ -16,12 +16,61 @@ $framboise: rgb(165, 70, 87);
     .header {
         &_nav {
             background-color: $marine;
-            &_titre {
-                color: white;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            width: 100%;
+
+            @media screen and (min-width: 680px) {
+                flex-direction: row;
+                justify-content: space-between;
             }
-            &_list {
+            
+            &_titre {
+                margin-left: 40px;
+                color: white;
+                font-size: 20px;
+
+                @media screen and (max-width: 680px) {
+                    margin: auto;
+                }
+            }
+
+            &_list {   
+                @media screen and (min-width: 680px) {
+                    margin-right: 20px;
+                }
                 &_item {
                     color: white;
+                    font-size: 13px;
+                    margin: 5px 0px;
+                    padding: 0px 8px;
+
+                    @media screen and (min-width: 375px) {
+                        font-size: 15px;
+                    }
+
+                    @media screen and (min-width: 425px) {
+                        font-size: 17px;
+                    }
+
+                    @media screen and (min-width: 680px) {
+                        padding: 17px 10px;
+                    }
+
+                    @media screen and (min-width: 1024px) {
+                        margin: 0px 15px;
+                    }
+                    
+                    &:hover, &:active {
+                        background-color: $framboise;
+                        transition: 0.5s;
+                    }
                 }
             }
         }
@@ -29,18 +78,43 @@ $framboise: rgb(165, 70, 87);
         &_titre {
             font-size: 15px;
             text-align: center;
-            margin-top: 20px;
+            padding-top: 70px;
+
+            @media screen and (min-width: 426px) {
+                font-size: 18px;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 22px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 26px;
+            }
         }
 
         &_soustitre {
             font-size: 12px;
             font-weight: 500;
             text-align: center;
+
+            @media screen and (min-width: 426px) {
+                font-size: 14px;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 17px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+            }
         }
     }
 
     .section1 {
-        margin-top: 20px;
+        margin: 20px auto;
+        max-width: 1024px;
 
         &_gallery {
             display: flex;
@@ -78,7 +152,8 @@ $framboise: rgb(165, 70, 87);
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin: 20px 0px;
+        margin: 20px auto;
+        max-width: 1024px;
 
         &_bloc {
             background-color: $marine;
@@ -90,6 +165,12 @@ $framboise: rgb(165, 70, 87);
             width: 130px;
             margin: 5px;
             padding: 0px 10px;
+
+            @media screen and (min-width: 960px) {
+                width: 150px;
+                padding: 5px 10px;
+                font-size: 10px;
+            }
 
             &_icon {
                 img {
@@ -132,6 +213,18 @@ $framboise: rgb(165, 70, 87);
         &_titre {
             font-size: 15px;
             text-align: center;
+
+            @media screen and (min-width: 426px) {
+                font-size: 18px;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 22px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 26px;
+            }
         }
 
         &_cards {
@@ -167,9 +260,9 @@ $framboise: rgb(165, 70, 87);
                     text-align: center;
                     margin: 10px 0px;
 
-                    &:hover {
+                    &:hover, &:active {
                         background-color: $framboise;
-                    }
+                        transition: 0.5s;                    }
                 }
             }
 
@@ -199,8 +292,9 @@ $framboise: rgb(165, 70, 87);
                     text-align: center;
                     margin: 10px 0px;
 
-                    &:hover {
+                    &:hover, &:active {
                         background-color: $framboise;
+                        transition: 0.5s;                        
                     }
                 }
             }
@@ -231,9 +325,9 @@ $framboise: rgb(165, 70, 87);
                     text-align: center;
                     margin: 10px 0px;
 
-                    &:hover {
+                    &:hover , &:active {
                         background-color: $framboise;
-                    }
+                        transition: 0.5s;                    }
                 }
             }
         }
@@ -244,6 +338,18 @@ $framboise: rgb(165, 70, 87);
             text-align: center;
             font-size: 15px;
             margin: 10px 0px;
+
+            @media screen and (min-width: 426px) {
+                font-size: 18px;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 22px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 26px;
+            }
         }
 
         &_formulaire {
@@ -261,6 +367,7 @@ $framboise: rgb(165, 70, 87);
                     border: solid $marine 2px;
                     padding-left: 10px;
                     border-radius: 15px;
+                    height: 23px;
 
                     &:last-of-type {
                         height: 100px;
@@ -276,10 +383,43 @@ $framboise: rgb(165, 70, 87);
                     width: 100px;
                     padding: 5px;
 
-                    &:hover {
+                    &:hover, &:active {
                         background-color: $framboise;
-                    }
+                        transition: 0.5s;                    }
                 }
+            }
+        }
+
+        &_containerup {
+            background-color: $marine;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 0;
+            opacity: 0.7;
+
+            &:hover, &:active {
+                background-color: $framboise;
+                transition: 0.5s;
+            }
+
+            &_up {
+            width: 30px;
+            filter: invert(1);
+            transform: rotate(180deg);
+            }
+
+            @media screen and (min-width: 768px) {
+                bottom: 50px;
+                right: 50px;
             }
         }
     }
@@ -292,21 +432,25 @@ $framboise: rgb(165, 70, 87);
         justify-content: center;
         text-align: center;
         padding: 10px 0px;
+        position: relative;
+        z-index: 1;
 
         &_text {
             color: white;
+            font-weight: 300;
         }
 
         &_list {
-            margin: 10px 0px;
+            margin: 20px 0px 10px 0px;
             
             &_item {
                 color: white;
                 margin: 10px 5px;
+                font-weight: 500;
 
-                &:hover {
+                &:hover, &:active {
                     color: $framboise;
-                }
+                    transition: 0.5s;                }
             }
         }
     }
