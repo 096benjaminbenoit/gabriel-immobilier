@@ -124,8 +124,8 @@
   flex-direction: column;
 }
 * .section1_gallery_img {
-  width: 92%;
-  max-height: 500px;
+  width: 90%;
+  max-height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -138,11 +138,16 @@
   margin-bottom: 20px;
 }
 * .section1_gallery_minia_img {
-  width: 30%;
+  width: 145px;
+  max-height: 145px;
   margin: 5px;
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 5px 13px 13px -7px rgba(0, 0, 0, 0.52);
+}
+* .section1_gallery_minia_img:hover {
+  transform: scale(1.09);
+  transition: 0.5s;
 }
 * .section2 {
   display: flex;
@@ -154,8 +159,7 @@
   max-width: 1024px;
 }
 * .section2_bloc {
-  background-color: rgb(4, 46, 92);
-  border-radius: 30px;
+  background-color: rgb(165, 70, 87);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -192,11 +196,10 @@
   max-width: 800px;
 }
 * .section3_prix {
-  background-color: rgb(4, 46, 92);
+  background-color: rgb(165, 70, 87);
   text-align: center;
   color: white;
   font-size: 18px;
-  border-radius: 30px;
   width: 200px;
   padding: 5px 0px;
   margin: 0 auto 20px auto;
@@ -229,7 +232,6 @@
 }
 * .section4_cards_card1 {
   border: 2px solid rgb(4, 46, 92);
-  border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,7 +241,6 @@
 }
 * .section4_cards_card1_img {
   width: 250px;
-  border-radius: 27px 27px 0 0;
   margin-bottom: 10px;
 }
 * .section4_cards_card1_text {
@@ -249,17 +250,16 @@
   background-color: rgb(4, 46, 92);
   color: white;
   width: 200px;
-  border-radius: 30px;
   text-align: center;
   margin: 10px 0px;
 }
 * .section4_cards_card1_bouton:hover, * .section4_cards_card1_bouton:active {
   background-color: rgb(165, 70, 87);
+  transform: scale(1.09);
   transition: 0.5s;
 }
 * .section4_cards_card2 {
   border: 2px solid rgb(4, 46, 92);
-  border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,7 +269,6 @@
 }
 * .section4_cards_card2_img {
   width: 250px;
-  border-radius: 27px 27px 0 0;
   margin-bottom: 10px;
 }
 * .section4_cards_card2_text {
@@ -279,17 +278,16 @@
   background-color: rgb(4, 46, 92);
   color: white;
   width: 200px;
-  border-radius: 30px;
   text-align: center;
   margin: 10px 0px;
 }
 * .section4_cards_card2_bouton:hover, * .section4_cards_card2_bouton:active {
   background-color: rgb(165, 70, 87);
+  transform: scale(1.09);
   transition: 0.5s;
 }
 * .section4_cards_card3 {
   border: 2px solid rgb(4, 46, 92);
-  border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,7 +297,6 @@
 }
 * .section4_cards_card3_img {
   width: 250px;
-  border-radius: 27px 27px 0 0;
   margin-bottom: 10px;
 }
 * .section4_cards_card3_text {
@@ -309,12 +306,12 @@
   background-color: rgb(4, 46, 92);
   color: white;
   width: 200px;
-  border-radius: 30px;
   text-align: center;
   margin: 10px 0px;
 }
 * .section4_cards_card3_bouton:hover, * .section4_cards_card3_bouton:active {
   background-color: rgb(165, 70, 87);
+  transform: scale(1.09);
   transition: 0.5s;
 }
 * .section5_titre {
@@ -349,7 +346,6 @@
   margin: 5px 0;
   border: solid rgb(4, 46, 92) 2px;
   padding-left: 10px;
-  border-radius: 15px;
   height: 23px;
 }
 * .section5_formulaire_form_input:last-of-type {
@@ -360,12 +356,12 @@
   background-color: rgb(4, 46, 92);
   color: white;
   border: none;
-  border-radius: 30px;
   width: 100px;
   padding: 5px;
 }
 * .section5_formulaire_form_button:hover, * .section5_formulaire_form_button:active {
   background-color: rgb(165, 70, 87);
+  transform: scale(1.09);
   transition: 0.5s;
 }
 * .section5_containerup {
@@ -386,6 +382,7 @@
 }
 * .section5_containerup:hover, * .section5_containerup:active {
   background-color: rgb(165, 70, 87);
+  transform: scale(1.09);
   transition: 0.5s;
 }
 * .section5_containerup_up {

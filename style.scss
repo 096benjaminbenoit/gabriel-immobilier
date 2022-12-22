@@ -123,8 +123,8 @@ $framboise: rgb(165, 70, 87);
             flex-direction: column;
 
             &_img {
-                width: 92%;
-                max-height: 500px;
+                width: 90%;
+                max-height: 400px;
                 object-fit: cover;
             }
 
@@ -136,11 +136,18 @@ $framboise: rgb(165, 70, 87);
                 align-items: center;
                 margin-bottom: 20px;
 
+
                 &_img {
-                    width: 30%;
+                    width: 145px;
+                    max-height: 145px;
                     margin: 5px;
                     object-fit: cover;
                     box-shadow: 5px 13px 13px -7px rgba(0,0,0,0.52);
+
+                    &:hover {
+                        transform: scale(1.09);
+                        transition: 0.5s;
+                    }
                 }
             }
         }
@@ -156,8 +163,7 @@ $framboise: rgb(165, 70, 87);
         max-width: 1024px;
 
         &_bloc {
-            background-color: $marine;
-            border-radius: 30px;
+            background-color: $framboise;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -178,6 +184,7 @@ $framboise: rgb(165, 70, 87);
                     filter: invert(1);
                 }
             }
+
             &_text {
                 color: white;
                 font-size: 10px;
@@ -198,11 +205,10 @@ $framboise: rgb(165, 70, 87);
         }
 
         &_prix {
-            background-color: $marine;
+            background-color: $framboise;
             text-align: center;
             color: white;
             font-size: 18px;
-            border-radius: 30px;
             width: 200px;
             padding: 5px 0px;
             margin: 0 auto 20px auto;
@@ -236,7 +242,7 @@ $framboise: rgb(165, 70, 87);
 
             &_card1 {
                 border: 2px solid $marine;
-                border-radius: 30px;
+                // border-radius: 30px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -246,7 +252,7 @@ $framboise: rgb(165, 70, 87);
 
                 &_img {
                     width: 250px;
-                    border-radius: 27px 27px 0 0;
+                    // border-radius: 27px 27px 0 0;
                     margin-bottom: 10px;
                 }
                 &_text {
@@ -256,19 +262,21 @@ $framboise: rgb(165, 70, 87);
                     background-color: $marine;
                     color: white;
                     width: 200px;
-                    border-radius: 30px;
+                    // border-radius: 30px;
                     text-align: center;
                     margin: 10px 0px;
 
                     &:hover, &:active {
                         background-color: $framboise;
-                        transition: 0.5s;                    }
+                        transform: scale(1.09);
+                        transition: 0.5s;
+                    }
                 }
             }
 
             &_card2 {
                 border: 2px solid $marine;
-                border-radius: 30px;
+                // border-radius: 30px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -278,7 +286,7 @@ $framboise: rgb(165, 70, 87);
 
                 &_img {
                     width: 250px;
-                    border-radius: 27px 27px 0 0;
+                    // border-radius: 27px 27px 0 0;
                     margin-bottom: 10px;
                 }
                 &_text {
@@ -288,12 +296,13 @@ $framboise: rgb(165, 70, 87);
                     background-color: $marine;
                     color: white;
                     width: 200px;
-                    border-radius: 30px;
+                    // border-radius: 30px;
                     text-align: center;
                     margin: 10px 0px;
 
                     &:hover, &:active {
                         background-color: $framboise;
+                        transform: scale(1.09);
                         transition: 0.5s;                        
                     }
                 }
@@ -301,7 +310,7 @@ $framboise: rgb(165, 70, 87);
 
             &_card3 {
                 border: 2px solid $marine;
-                border-radius: 30px;
+                // border-radius: 30px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -311,7 +320,7 @@ $framboise: rgb(165, 70, 87);
 
                 &_img {
                     width: 250px;
-                    border-radius: 27px 27px 0 0;
+                    // border-radius: 27px 27px 0 0;
                     margin-bottom: 10px;
                 }
                 &_text {
@@ -321,12 +330,13 @@ $framboise: rgb(165, 70, 87);
                     background-color: $marine;
                     color: white;
                     width: 200px;
-                    border-radius: 30px;
+                    // border-radius: 30px;
                     text-align: center;
                     margin: 10px 0px;
 
                     &:hover , &:active {
                         background-color: $framboise;
+                        transform: scale(1.09);
                         transition: 0.5s;                    }
                 }
             }
@@ -366,7 +376,7 @@ $framboise: rgb(165, 70, 87);
                     margin: 5px 0;
                     border: solid $marine 2px;
                     padding-left: 10px;
-                    border-radius: 15px;
+                    // border-radius: 15px;
                     height: 23px;
 
                     &:last-of-type {
@@ -379,12 +389,13 @@ $framboise: rgb(165, 70, 87);
                     background-color: $marine;
                     color: white;
                     border: none;
-                    border-radius: 30px;
+                    // border-radius: 30px;
                     width: 100px;
                     padding: 5px;
 
                     &:hover, &:active {
                         background-color: $framboise;
+                        transform: scale(1.09);
                         transition: 0.5s;                    }
                 }
             }
@@ -408,6 +419,7 @@ $framboise: rgb(165, 70, 87);
 
             &:hover, &:active {
                 background-color: $framboise;
+                transform: scale(1.09);
                 transition: 0.5s;
             }
 
@@ -450,7 +462,8 @@ $framboise: rgb(165, 70, 87);
 
                 &:hover, &:active {
                     color: $framboise;
-                    transition: 0.5s;                }
+                    transition: 0.5s;                
+                }
             }
         }
     }
